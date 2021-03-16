@@ -1,0 +1,33 @@
+@import '../../../.././assets/scss/_colors.scss';
+@import '../../../.././assets/scss/_fonts.scss';
+
+.PrimaryButton {
+    border-radius: 3rem;
+    color: white;
+    font-size: 1.4rem;
+    font-family: $primaryFont;
+    height: 4rem;
+    width: 17.5rem;
+}
+
+.Primary {
+    border: 1px solid $buttonSecondary;
+    background-color: transparent;
+}
+
+.Secondary {
+    border: none;
+    background-color: #ee431f;
+    color: $textPrimary;
+}
+
+@media(max-width: 1400px){
+    .PrimaryButton {
+        border-radius: 3rem;
+        color: white;
+        font-size: 1.1rem;
+        font-family: $primaryFont;
+        height: 3.5rem;
+        width: 13.1rem;
+    }
+}

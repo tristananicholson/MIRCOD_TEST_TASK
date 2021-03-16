@@ -1,0 +1,164 @@
+@import '../../.././assets/scss/_colors.scss';
+@import '../../.././assets/scss/_fonts.scss';
+
+.OptionsCarousel {
+    width: 100%;
+    height: 13rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: flex-start;
+
+    .LeftChevron {
+        height: 8rem;
+        width: 4.9%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .RightChevron {
+       @extend .LeftChevron;
+       justify-content: flex-end;
+    }
+
+    .Options {
+        height: 100%;
+        width: 90.2%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .AvailableOptions {
+            width: calc( 100% - 9.091% );
+
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+
+            .Window {
+                display: flex;
+                width:100%;
+
+                .Option {
+                    display: inline;
+                    height: 100%;
+                    width: 10%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-shrink: 0;
+                    box-sizing: border-box;
+    
+                    .Circle {
+                        width: 8rem;
+                        height: 8rem;
+                        background-color: $backgroundPrimary;
+                        border-radius: 100%;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    .Name {
+                        padding-top: 0.5rem;
+                        text-align: center;
+                        font-family: $primaryFontBold;
+                        font-size: 1.2rem;
+                        color: $textTertiary;
+                    }
+
+                    
+                }
+
+                .Selected {
+                    
+                    .Circle {
+                        background-color: $backgroundSecondary !important;
+                    }
+                    svg {
+                        color: white !important;
+                    }  
+                    .Name {
+                        color: $textPrimaryDark !important;
+                    }
+                }
+            }
+
+            
+        }
+
+        .CustomOption {
+            width: 9.091%;
+            height: 8rem;
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            div {
+                height: 8rem;
+                width: 8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 100%;
+                border: 2px solid $backgroundSecondaryDark;
+            }
+        }
+
+    }
+}
+
+@keyframes moveRight{
+    0% {
+        transform: translateX(0);
+    }
+    99.9% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveLeft{
+    0% {
+        transform: translateX(0);
+    }
+    99.9% {
+        -webkit-transform: translate(-10%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.TranslateXRight {
+    animation-name: moveRight;
+    animation-duration: 0.5s;
+    animation-timing-function:linear;
+}
+
+.TranslateXLeft {
+    animation-name: moveLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+}
+
+@media (max-width: 1400px){
+    .Circle {
+        width:6rem !important;
+        height: 6rem !important;
+        
+    }
+    .Name {
+        font-size: 0.8rem !important;
+    }
+    .CustomOption {
+        div {
+            width:6rem !important;
+            height: 6rem !important;
+        }
+    }
+}

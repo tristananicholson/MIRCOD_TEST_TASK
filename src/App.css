@@ -1,0 +1,17 @@
+@import './assets/fonts/fonts.css';
+
+.App {
+  padding-top: 8vh;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}

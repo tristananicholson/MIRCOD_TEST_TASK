@@ -1,0 +1,27 @@
+@import '../.././assets/scss/_colors.scss';
+@import '../.././assets/scss/_fonts.scss';
+
+.ChipConstructor {
+    margin-top: 10vh;
+}
+.Title {
+    height: 16.6vh;
+    width: 100vw;
+    background-image: url('../../assets/images/Chip_Background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 25vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: $primaryFontBold;
+        font-size: 2.5em;
+
+        span{
+            color: $textSecondary;
+        }
+    }
+}

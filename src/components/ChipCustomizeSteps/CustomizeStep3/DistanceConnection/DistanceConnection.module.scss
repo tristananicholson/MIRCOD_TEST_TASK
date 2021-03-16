@@ -1,0 +1,74 @@
+@import '../../../.././assets/scss/_colors.scss';
+@import '../../../.././assets/scss/_fonts.scss';
+
+.DistanceConnection {
+    z-index: 100;
+    width: 49%;
+    background-color: #ffffff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 51%;
+
+    .Progress {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        
+        .Container {
+            width: 50%;
+        }
+    }
+
+    .Transmission {
+        width: 100%;
+        height: 28%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .Title {
+            width: 100%;
+            font-size: 2.5rem;
+            font-family: $primaryFontBold;
+        }
+
+        .Input {
+            width: 100%;
+        }
+
+        span {   
+            color: #f75f19;
+        }
+    }
+
+    .Connection {
+        
+        height: 25%;
+
+        .Grid {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .Separator {
+        width: 100%;
+        height: 0.1rem;
+        background-color: $backgroundPrimaryLight;
+    }
+
+    .Button {
+        height: 15%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}

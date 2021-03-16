@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Nova-Regular'; 
+    src: url("../fonts/ProximaNova-Regular.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nova-Bold'; 
+    src: url("../fonts/Proxima\ Nova\ Bold.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nova-Light'; 
+    src: url("../fonts/Proxima\ Nova\ Alt\ Light.otf") format("opentype");
+    font-style: normal;
+}

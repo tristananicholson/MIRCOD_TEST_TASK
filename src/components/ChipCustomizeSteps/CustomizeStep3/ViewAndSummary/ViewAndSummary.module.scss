@@ -1,0 +1,96 @@
+@import '../../../.././assets/scss/_colors.scss';
+@import '../../../.././assets/scss/_fonts.scss';
+
+.ViewAndSummary {
+    z-index: 200;
+    width: 41%;
+    background: linear-gradient( $backgroundSecondary, $backgroundSecondaryDark);
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0 100%);
+    box-shadow: 1rem 0 2rem rgb(199, 62, 31) inset;
+    color: white;
+    padding-left: 5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 12%;
+
+    .Heading {
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+
+        div > h3{
+            font-size: 2rem;
+            font-family: $primaryFontBold;
+        }
+    }
+
+    .Details {
+        width: 70%;
+        font-family: $primaryFont;
+        font-size: 1.4rem;
+        padding-top: 1em;
+
+        .Bold {
+            font-family: $primaryFontBold;
+        }
+    } 
+
+    
+}
+
+.OrderModal {
+    .Title {
+        font-size: 2.5rem;
+        font-family: $primaryFontBold;
+        display: flex;
+        justify-content: center;
+         
+        div {
+            border-bottom: 0.5rem solid $textSecondary;
+        }
+    }
+    .Fields {
+        padding-top: 4rem;
+        font-size: 1.7rem;
+        font-family: $primaryFont;
+
+        input {
+            border-radius: 0rem;
+            border: 2px solid $textSecondary;
+            width: 25rem;
+            height: 3rem;
+        }
+    }
+
+    .Button {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1400px){
+    .ViewAndSummary{
+        padding-left: 3rem;
+        padding-right: 2.5rem;
+        padding-top: 2rem;
+
+        .Details {
+            font-size: 1rem;
+        }
+        .Heading {
+            div > h3{
+                font-size: 1.5rem;
+            }
+        }
+    } 
+}

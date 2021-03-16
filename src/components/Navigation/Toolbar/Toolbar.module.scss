@@ -1,0 +1,26 @@
+@import '../../../assets/scss/_colors.scss';
+@import '../../../assets/scss/_fonts.scss';
+
+.Toolbar {
+    background-color: $backgroundPrimary;
+    width: 100vw;
+    height: 8vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+}
+.Toolbar > div {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    height: 150px;
+}

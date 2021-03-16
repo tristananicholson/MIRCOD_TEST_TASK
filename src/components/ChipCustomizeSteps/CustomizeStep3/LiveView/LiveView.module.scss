@@ -1,0 +1,43 @@
+@import '../../../.././assets/scss/_colors.scss';
+@import '../../../.././assets/scss/_fonts.scss';
+
+.View {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    z-index: 500;
+    top: 50%;
+    left: calc( 12% + 5rem );
+
+    img {
+        width: 100%;
+        position: absolute;   
+    }
+
+    div {
+        position: absolute;           
+        font-family: $primaryFontBold;
+        top: 65%;
+        left: 0;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        color: $textPrimary;
+
+        .Big {
+            font-size: 3.5rem;
+            line-height: 2.8rem;
+            height: fit-content;
+            width: fit-content;
+        }
+        .Small {
+            font-size: 2.8rem;
+            line-height: 2rem;
+            height: fit-content;
+            width: fit-content;
+        }
+    }
+}
